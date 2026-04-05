@@ -4,7 +4,7 @@
 
 Give it a ticker symbol. Get a complete investment memo.
 
-This project automates the end-to-end workflow of an equity research analyst using [Manus](https://manus.im/) as the core platform. From a single ticker input (e.g., `PLTR`), it autonomously collects financial data, reads SEC filings, builds a valuation model, and produces three professional, editable deliverables — all in about **20 minutes**.
+This project automates the end-to-end workflow of equity research analysis using [Manus](https://manus.im/) as the core platform. From a single ticker input (e.g., `PLTR`), it autonomously collects financial data, reads SEC filings, builds a valuation model, and produces three professional, editable deliverables — all in about **20 minutes**.
 
 ---
 
