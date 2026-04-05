@@ -16,6 +16,12 @@ Here's a taste of what the pipeline generated in 20 minutes for Palantir Technol
 
 > **HOLD** — Palantir's execution is exceptional (FY2025 revenue of $4.48B, up 56% YoY; Rule of 40 score of 127%; FCF margin of 50.7%), but the stock is priced for absolute perfection. Trading at ~68x EV/Revenue — roughly 4x the peer median — the current ~$155 price requires sustaining 60%+ growth for 5+ years while maintaining 50%+ margins, a historically unprecedented feat. Our DCF implies a fundamental fair value of **$31.37/share**. Aggressive insider selling ($292M in 30 days, zero purchases) reinforces caution.
 
+**How Manus reached this conclusion:**
+1. **The Business:** Manus pulled the latest financials from SEC filings and saw an incredible business — revenue growing fast, massive cash flow, flawless execution.
+2. **The Valuation:** But then it asked if the $155 stock price was justified. It built a DCF model estimating the company's worth based on future earnings, arriving at ~$31. The market is demanding 60% growth for the next five years straight — something almost no company in history has done.
+3. **The Insider Signal:** Manus then scraped insider trading data via Yahoo Finance API (`get_stock_insider_roster` and `get_stock_insider_transactions`) and found executives had sold nearly $300 million in stock over 30 days, with zero buys.
+4. **The Verdict:** Instead of hyping the AI narrative, Manus issued a data-driven 'Hold' — concluding the company is great, but the stock is priced for absolute perfection.
+
 ### Sample Charts
 
 | Revenue Growth Trajectory | Valuation vs. Peers |
