@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            box-sizing: border-box; 
+            background: #121212;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Inter', sans-serif;
+            color: #CED4DA;
+            overflow: hidden;
+        }
+        .header {
+            padding: 60px 80px 0 80px;
+        }
+        .accent-line {
+            width: 60px;
+            height: 4px;
+            background: #20C997;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(32, 201, 151, 0.5);
+        }
+        h1 {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #F8F9FA;
+            line-height: 1.2;
+            text-shadow: 0 0 15px rgba(0, 229, 255, 0.1);
+        }
+        .content-area {
+            display: flex;
+            padding: 40px 80px 0 80px;
+            gap: 50px;
+            flex: 1;
+        }
+        .left-column {
+            flex: 0.45;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .right-column {
+            flex: 0.55;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .narrative-text {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        .highlight-text {
+            color: #F8F9FA;
+            font-weight: 600;
+        }
+        .accent-text {
+            color: #00E5FF;
+            font-weight: 600;
+        }
+        .stats-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .stat-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        .stat-icon {
+            color: #20C997;
+            font-size: 24px;
+            line-height: 1.2;
+        }
+        .stat-content {
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        /* Reduced chart height slightly so the lowest element stays below 720px */
+        .chart-container {
+            width: 100%;
+            height: 446px;
+            background: #F8F9FA;
+            padding: 15px;
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.1);
+        }
+        .chart-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body><div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h1>Revenue Acceleration: U.S. Commercial Segment Driving Hyper-Growth</h1>
+        </div>
+        <div class="content-area">
+            <div class="left-column">
+                <div class="narrative-text">
+                    Revenue growth re-accelerated dramatically in FY2025, with total revenue reaching <span class="highlight-text">$4.48B (+56% YoY)</span>. The U.S. commercial segment was the standout performer, driven by the AIP bootcamp strategy.
+                </div>
+<div class="stats-list">
+                    <div class="stat-item">
+                        <div class="stat-icon">■</div>
+                        <div class="stat-content">
+                            <span class="accent-text">U.S. Commercial:</span> Grew 109% YoY to $1.47B, with Q4 alone surging 137% YoY.
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">■</div>
+                        <div class="stat-content">
+                            <span class="accent-text">U.S. Government:</span> Grew 55% YoY to $1.86B, boosted by the Pentagon Maven AI program expansion.
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">■</div>
+                        <div class="stat-content">
+                            <span class="accent-text">FY2026 Guidance:</span> $7.19B implies continued 61% growth, significantly above consensus expectations.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="chart-container" style="transform: translate(0px, -40px);">
+                    <img src="/home/ubuntu/pltr-equity-research/charts/revenue_growth.png" alt="Revenue Growth Trajectory">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            box-sizing: border-box; 
+            background: #121212;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Inter', sans-serif;
+            color: #CED4DA;
+            overflow: hidden;
+        }
+        .header {
+            padding: 60px 80px 0 80px;
+        }
+        .accent-line {
+            width: 60px;
+            height: 4px;
+            background: #20C997;
+            margin-bottom: 12px; /* shrunk */
+            box-shadow: 0 0 10px rgba(32, 201, 151, 0.5);
+        }
+        h1 {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #F8F9FA;
+            line-height: 1.2;
+            text-shadow: 0 0 15px rgba(0, 229, 255, 0.1);
+        }
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            padding: 8px 80px 0 80px; /* reduced top padding */
+            gap: 20px; /* reduced gap */
+            flex: 1;
+        }
+        .columns-container {
+            display: flex;
+            gap: 24px; /* reduced gap between columns */
+            flex: 1;
+        }
+        .column {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 18px; /* reduced padding */
+            display: flex;
+            flex-direction: column;
+            gap: 12px; /* reduced gap inside column */
+        }
+        .bull-column {
+            border-top: 4px solid #20C997;
+        }
+        .bear-column {
+            border-top: 4px solid #FF4B4B;
+        }
+        .column-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 8px; /* reduced */
+        }
+        .column-title {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 32px;
+        }
+        .bull-title {
+            color: #20C997;
+            text-shadow: 0 0 10px rgba(32, 201, 151, 0.3);
+        }
+        .bear-title {
+            color: #FF4B4B;
+            text-shadow: 0 0 10px rgba(255, 75, 75, 0.3);
+        }
+        .price-target {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 20px;
+            color: #F8F9FA;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 5px 15px;
+        }
+        .points-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px; /* reduced vertical gaps between points */
+        }
+        .point-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .bull-icon {
+            color: #20C997;
+            font-size: 20px;
+            line-height: 1; /* keep icon compact */
+        }
+        .bear-icon {
+            color: #FF4B4B;
+            font-size: 20px;
+            line-height: 1;
+        }
+        .bottom-banner {
+            background: rgba(255, 75, 75, 0.1);
+            border-left: 4px solid #FF4B4B;
+            padding: 12px 20px; /* reduced padding */
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 0; /* removed extra bottom margin */
+        }
+        .banner-label {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 24px;
+            color: #FF4B4B;
+            white-space: nowrap;
+        }
+        .banner-text {
+            font-size: 20px;
+            color: #F8F9FA;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body><div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h1>Bull vs. Bear Case: The Investment Debate</h1>
+        </div>
+        <div class="content-area">
+            <div class="columns-container">
+                <div class="column bull-column">
+                    <div class="column-header">
+                        <div class="column-title bull-title">Bull Case</div>
+                        <div class="price-target">PT: $200+</div>
+                    </div>
+                    <div class="points-list">
+                        <div class="point-item">
+                            <div class="bull-icon">▲</div>
+                            <div>AIP creates a new software category with winner-take-most dynamics.</div>
+                        </div>
+                        <div class="point-item">
+                            <div class="bull-icon">▲</div>
+                            <div>Pentagon Maven AI becomes the backbone of U.S. military operations.</div>
+                        </div>
+                        <div class="point-item">
+                            <div class="bull-icon">▲</div>
+                            <div>Commercial growth sustains 80%+ for 3+ years.</div>
+                        </div>
+                        <div class="point-item">
+                            <div class="bull-icon">▲</div>
+                            <div>Operating leverage drives margins to 60%+.</div>
+                        </div>
+                        <div class="point-item">
+                            <div class="bull-icon">▲</div>
+                            <div>Palantir becomes the "operating system for AI" across both government and enterprise.</div>
+                        </div>
+                    </div>
+                </div>
+<div class="column bear-column">
+                    <div class="column-header">
+                        <div class="column-title bear-title">Bear Case</div>
+                        <div class="price-target">PT: $30-50</div>
+                    </div>
+                    <div class="points-list">
+                        <div class="point-item">
+                            <div class="bear-icon">▼</div>
+                            <div>Growth decelerates as AIP adoption normalizes.</div>
+                        </div>
+                        <div class="point-item">
+                            <div class="bear-icon">▼</div>
+                            <div>Competition from Databricks, Snowflake, and hyperscalers intensifies.</div>
+                        </div>
+                        <div class="point-item">
+                            <div class="bear-icon">▼</div>
+                            <div>Insider selling signals peak confidence.</div>
+                        </div>
+                        <div class="point-item">
+                            <div class="bear-icon">▼</div>
+                            <div>Multiple compresses to peer-average levels.</div>
+                        </div>
+                        <div class="point-item">
+                            <div class="bear-icon">▼</div>
+                            <div>Government budget cuts impact defense revenue.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<div class="bottom-banner" style="transform: translate(0px, -9.16905px);">
+                <div class="banner-label">KEY RISK</div>
+                <div class="banner-text">
+                    Insider selling of <strong>$292M in 30 days with zero purchases</strong> is a significant red flag at these valuation levels.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            box-sizing: border-box; 
+            background: #121212;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Inter', sans-serif;
+            color: #CED4DA;
+            overflow: hidden;
+        }
+        .header {
+            padding: 60px 80px 0 80px;
+        }
+        .accent-line {
+            width: 60px;
+            height: 4px;
+            background: #20C997;
+            margin-bottom: 12px;
+            box-shadow: 0 0 10px rgba(32, 201, 151, 0.5);
+        }
+        h1 {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #F8F9FA;
+            line-height: 1.2;
+            text-shadow: 0 0 15px rgba(0, 229, 255, 0.1);
+        }
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 80px 0 80px; /* reduced top padding */
+            flex: 1;
+        }
+        .top-section {
+            display: flex;
+            gap: 60px;
+            margin-bottom: 20px; /* reduced gap to bottom banner */
+        }
+        .left-column {
+            flex: 1;
+            font-size: 24px;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .right-column {
+            flex: 1.2;
+            display: flex;
+            flex-direction: column;
+            gap: 12px; /* tightened between scenario boxes */
+        }
+        .highlight-text {
+            color: #F8F9FA;
+            font-weight: 600;
+        }
+        .scenario-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 20px; /* reduced vertical padding */
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 4px solid #555;
+        }
+        .scenario-box.optimistic {
+            border-left-color: #20C997;
+            background: rgba(32, 201, 151, 0.05);
+        }
+        .scenario-box.base {
+            border-left-color: #00E5FF;
+            background: rgba(0, 229, 255, 0.05);
+        }
+        .scenario-box.bear {
+            border-left-color: #C00000;
+            background: rgba(192, 0, 0, 0.05);
+        }
+        .scenario-info {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .scenario-header {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 26px;
+            color: #F8F9FA;
+        }
+        .scenario-params {
+            font-size: 16px;
+            color: #CED4DA;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .scenario-price {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 48px;
+        }
+        .optimistic .scenario-price { color: #20C997; text-shadow: 0 0 15px rgba(32, 201, 151, 0.3); }
+        .base .scenario-price { color: #00E5FF; text-shadow: 0 0 15px rgba(0, 229, 255, 0.3); }
+        .bear .scenario-price { color: #C00000; text-shadow: 0 0 15px rgba(192, 0, 0, 0.3); }
+
+        .bottom-banner {
+            background: rgba(191, 143, 0, 0.1);
+            border-left: 4px solid #BF8F00;
+            padding: 16px 24px; /* reduced padding */
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .banner-title {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 20px;
+            color: #BF8F00;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .banner-text {
+            font-size: 22px;
+            color: #F8F9FA;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h1>Sensitivity Analysis: All Scenarios Show Overvaluation</h1>
+        </div>
+        <div class="content-area">
+            <div class="top-section">
+                <div class="left-column">
+                    <p>Even under the most <span class="highlight-text" style="color: #20C997;">optimistic assumptions</span>, the DCF implies a share price of ~$75 — still roughly half the current market price.</p>
+                    <p style="margin-top: 16px;">The <span class="highlight-text" style="color: #00E5FF;">base case</span> of $31 and the <span class="highlight-text" style="color: #C00000;">bear case</span> of $15-20 suggest significant downside risk if growth decelerates or multiples compress.</p>
+                </div>
+                <div class="right-column">
+                    <div class="scenario-box optimistic">
+                        <div class="scenario-info">
+                            <div class="scenario-header">Optimistic Case</div>
+                            <div class="scenario-params">WACC: 10.0% | Term. Growth: 5.0%</div>
+                        </div>
+                        <div class="scenario-price">~$75</div>
+                    </div>
+                    <div class="scenario-box base">
+                        <div class="scenario-info">
+                            <div class="scenario-header">Base Case</div>
+                            <div class="scenario-params">WACC: 13.4% | Term. Growth: 4.0%</div>
+                        </div>
+                        <div class="scenario-price">$31</div>
+                    </div>
+                    <div class="scenario-box bear">
+                        <div class="scenario-info">
+                            <div class="scenario-header">Bear Case</div>
+                            <div class="scenario-params">WACC: 16.0% | Term. Growth: 2.0%</div>
+                        </div>
+                        <div class="scenario-price">~$18</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-banner">
+                <div class="banner-title">What justifies the current ~$155 price?</div>
+                <div class="banner-text">The stock would need to sustain <span class="highlight-text">60%+ growth for 5+ years</span> AND maintain <span class="highlight-text">50%+ FCF margins</span> — a historically unprecedented combination.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

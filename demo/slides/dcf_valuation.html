@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            box-sizing: border-box; 
+            background: #121212;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Inter', sans-serif;
+            color: #CED4DA;
+            overflow: hidden;
+        }
+        .header {
+            padding: 60px 60px 0 60px; /* keep top padding unchanged */
+        }
+        .accent-line {
+            width: 60px;
+            height: 4px;
+            background: #20C997;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(32, 201, 151, 0.5);
+        }
+        h1 {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #F8F9FA;
+            line-height: 1.2;
+            text-shadow: 0 0 15px rgba(0, 229, 255, 0.1);
+        }
+        .content-area {
+            display: flex;
+            padding: 24px 60px 0 60px; /* reduced top and side padding to save vertical space */
+            gap: 40px; /* narrower gap between columns */
+            flex: 1;
+        }
+        .left-column {
+            flex: 1;
+            font-size: 22px;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            gap: 16px; /* slightly reduced gap between paragraphs */
+        }
+        .right-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .highlight-text {
+            color: #F8F9FA;
+            font-weight: 600;
+        }
+        .metrics-table {
+            width: 100%;
+            border-top: 3px solid #00E5FF;
+            background: rgba(255, 255, 255, 0.03);
+            display: flex;
+            flex-direction: column;
+        }
+        .metric-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px; /* reduced padding to compact rows */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .metric-row:last-child {
+            border-bottom: none;
+        }
+        .metric-row.highlight {
+            background: rgba(32, 201, 151, 0.1);
+            border-left: 4px solid #20C997;
+            padding-left: 26px;
+        }
+        .metric-row.warning {
+            background: rgba(191, 143, 0, 0.1);
+            border-left: 4px solid #BF8F00;
+            padding-left: 26px;
+        }
+        .metric-label {
+            font-size: 20px;
+            color: #CED4DA;
+        }
+        .metric-value {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 28px;
+            color: #F8F9FA;
+        }
+        .metric-row.highlight .metric-value {
+            color: #20C997;
+            font-size: 36px;
+            text-shadow: 0 0 10px rgba(32, 201, 151, 0.3);
+        }
+        .metric-row.warning .metric-value {
+            color: #BF8F00;
+            font-size: 32px;
+        }
+        .table-title {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 24px;
+            color: #00E5FF;
+            margin-bottom: 12px; /* tightened spacing */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h1>DCF Valuation: Fundamental Fair Value of $31.37</h1>
+        </div>
+        <div class="content-area">
+            <div class="left-column">
+                <p>Our 10-year DCF projects revenue from $7.2B in 2026 to <span class="highlight-text">$24.6B by 2035</span>, with FCF margins stabilizing at 43%.</p>
+                <p>Using a WACC of 13.4% and a terminal growth rate of 4.0%, we derive an enterprise value of $73.5B. Adding $7.2B net cash yields an equity value of $80.7B, or <span class="highlight-text" style="color: #20C997;">$31.37 per share</span>.</p>
+                <p>Reverse-engineering the current price shows the market is pricing in a WACC of <span class="highlight-text" style="color: #BF8F00;">5.9%</span> — effectively assuming near-zero risk.</p>
+            </div>
+            <div class="right-column">
+                <div class="table-title">Key Model Outputs</div>
+                <div class="metrics-table">
+                    <div class="metric-row">
+                        <div class="metric-label">10-Year Revenue CAGR</div>
+                        <div class="metric-value">13.1%</div>
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric-label">Terminal Year FCF</div>
+                        <div class="metric-value">$10.6B</div>
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric-label">Enterprise Value</div>
+                        <div class="metric-value">$73.5B</div>
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric-label">Equity Value</div>
+                        <div class="metric-value">$80.7B</div>
+                    </div>
+                    <div class="metric-row highlight">
+                        <div class="metric-label" style="color: #F8F9FA; font-weight: 600;">Implied Price per Share</div>
+                        <div class="metric-value">$31.37</div>
+                    </div>
+                    <div class="metric-row warning">
+                        <div class="metric-label" style="color: #F8F9FA; font-weight: 600;">Market-Implied WACC</div>
+                        <div class="metric-value">5.87%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            box-sizing: border-box; 
+            background: #121212;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Inter', sans-serif;
+            color: #CED4DA;
+            overflow: hidden;
+        }
+        .header {
+            padding: 60px 80px 0 80px;
+        }
+        .accent-line {
+            width: 60px;
+            height: 4px;
+            background: #20C997;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(32, 201, 151, 0.5);
+        }
+        h1 {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #F8F9FA;
+            line-height: 1.2;
+            text-shadow: 0 0 15px rgba(0, 229, 255, 0.1);
+        }
+        .content-area {
+            display: flex;
+            padding: 40px 80px 0 80px;
+            gap: 60px;
+            flex: 1;
+        }
+        .left-column {
+            flex: 1;
+            font-size: 24px;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+        .right-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+        .highlight-text {
+            color: #F8F9FA;
+            font-weight: 600;
+        }
+        .score-container {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 229, 255, 0.2);
+            padding: 40px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .score-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #00E5FF, #20C997);
+        }
+        .massive-score {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 140px;
+            color: #F8F9FA;
+            line-height: 1;
+            text-shadow: 0 0 30px rgba(32, 201, 151, 0.4);
+            margin-bottom: 10px;
+        }
+        .score-label {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 24px;
+            color: #20C997;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+        }
+        .breakdown-container {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+        }
+        .breakdown-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .breakdown-value {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 36px;
+            color: #00E5FF;
+        }
+        .breakdown-label {
+            font-size: 16px;
+            color: #CED4DA;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .plus-sign {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 36px;
+            color: #888;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h1>Rule of 40: Best-in-Class Among Software Peers</h1>
+        </div>
+        <div class="content-area">
+            <div class="left-column">
+                <p>The Rule of 40 is a key benchmark for software companies, measuring the sum of revenue growth rate and profit margin.</p>
+                <p style="margin-top:18px;">Palantir's score of <span class="highlight-text" style="color: #20C997;">127%</span> dramatically exceeds the 40% threshold and is the highest among all major enterprise software peers.</p>
+                <p style="margin-top:18px;">This metric demonstrates that Palantir is not sacrificing profitability for growth — it is achieving both simultaneously at an <span class="highlight-text">elite level</span>.</p>
+            </div>
+            <div class="right-column">
+                <div class="score-container">
+                    <div class="massive-score">127%</div>
+                    <div class="score-label">Rule of 40 Score</div>
+                    
+                    <div class="breakdown-container">
+                        <div class="breakdown-item">
+                            <div class="breakdown-value">56%</div>
+                            <div class="breakdown-label">Revenue Growth</div>
+                        </div>
+                        <div class="plus-sign">+</div>
+                        <div class="breakdown-item">
+                            <div class="breakdown-value">50%</div>
+                            <div class="breakdown-label">Adj. Op Margin</div>
+                        </div>
+                        <div class="plus-sign">+</div>
+                        <div class="breakdown-item">
+                            <div class="breakdown-value">21%</div>
+                            <div class="breakdown-label">Additional</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

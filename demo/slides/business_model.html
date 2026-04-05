@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            box-sizing: border-box; 
+            background: #121212;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Inter', sans-serif;
+            color: #CED4DA;
+            overflow: hidden;
+        }
+        .header {
+            padding: 60px 80px 0 80px;
+        }
+        .accent-line {
+            width: 60px;
+            height: 4px;
+            background: #20C997;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(32, 201, 151, 0.5);
+        }
+        h1 {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #F8F9FA;
+            line-height: 1.2;
+            text-shadow: 0 0 15px rgba(0, 229, 255, 0.1);
+        }
+        .content-area {
+            padding: 30px 80px 0 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            flex: 1;
+        }
+        .intro-text {
+            font-size: 22px;
+            line-height: 1.6;
+            color: #CED4DA;
+        }
+        .highlight-text {
+            color: #F8F9FA;
+            font-weight: 600;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 25px;
+            height: 340px;
+        }
+        .platform-box {
+            background: rgba(255, 255, 255, 0.03);
+            border-top: 3px solid #00E5FF;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .platform-box:nth-child(even) {
+            border-top: 3px solid #20C997;
+        }
+        .platform-title {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 28px;
+            color: #F8F9FA;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .platform-desc {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #CED4DA;
+        }
+        .platform-tag {
+            font-size: 14px;
+            font-weight: 600;
+            color: #00E5FF;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: auto;
+        }
+        .platform-box:nth-child(even) .platform-tag {
+            color: #20C997;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h1>Business Model: The AI Operating System</h1>
+        </div>
+        <div class="content-area">
+            <div class="intro-text">
+                Palantir operates four interconnected platforms that form a complete AI operating system. The company's moat is built on <span class="highlight-text">high switching costs, proprietary ontology frameworks, and unparalleled security clearances</span>.
+            </div>
+            
+            <div class="grid-container">
+                <div class="platform-box">
+                    <div class="platform-title">Gotham</div>
+                    <div class="platform-desc">Serves defense and intelligence communities with multi-intelligence fusion and mission planning.</div>
+                    <div class="platform-tag">Pentagon Maven AI Expansion</div>
+                </div>
+                
+                <div class="platform-box">
+                    <div class="platform-title">Foundry</div>
+                    <div class="platform-desc">Provides the commercial enterprise equivalent with digital twin capabilities to optimize operations.</div>
+                    <div class="platform-tag">Digital Twin / Ontology</div>
+                </div>
+                
+                <div class="platform-box">
+                    <div class="platform-title">AIP</div>
+                    <div class="platform-desc">The breakthrough growth driver — an application layer for generative AI that integrates LLMs securely.</div>
+                    <div class="platform-tag">Bootcamp GTM Strategy</div>
+                </div>
+                
+                <div class="platform-box">
+                    <div class="platform-title">Apollo</div>
+                    <div class="platform-desc">The CI/CD backbone enabling automated software package building and deployment across all environments.</div>
+                    <div class="platform-tag">CI/CD Infrastructure</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

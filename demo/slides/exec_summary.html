@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            box-sizing: border-box; 
+            background: #121212;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Inter', sans-serif;
+            color: #CED4DA;
+            overflow: hidden;
+        }
+        .header {
+            padding: 60px 80px 0 80px;
+        }
+        .accent-line {
+            width: 60px;
+            height: 4px;
+            background: #20C997;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(32, 201, 151, 0.5);
+        }
+        h1 {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #F8F9FA;
+            line-height: 1.2;
+            text-shadow: 0 0 15px rgba(0, 229, 255, 0.1);
+        }
+        .content-area {
+            display: flex;
+            padding: 24px 80px 0 80px; /* reduced top padding to pull content up */
+            gap: 36px; /* smaller horizontal gap */
+            flex: 1;
+        }
+        .left-column {
+            flex: 1.2;
+            font-size: 22px;
+            line-height: 1.6;
+        }
+        .left-column p { margin-bottom: 12px; } /* replace large <br> gaps */
+        .left-column p:last-child { margin-bottom: 0; }
+        .right-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 16px; /* reduced vertical gaps between boxes */
+        }
+        .highlight-text {
+            color: #F8F9FA;
+            font-weight: 600;
+        }
+        .data-box {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 4px solid #00E5FF;
+            padding: 16px 20px; /* reduced vertical padding */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .data-label {
+            font-size: 18px;
+            color: #CED4DA;
+        }
+        .data-value {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 32px;
+            color: #F8F9FA;
+            text-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+        }
+        .recommendation-box {
+            background: rgba(191, 143, 0, 0.1);
+            border-left: 4px solid #BF8F00;
+            padding: 20px 24px; /* slightly reduced */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0; /* removed extra top margin to rely on gap */
+        }
+        .recommendation-label {
+            font-size: 20px;
+            color: #F8F9FA;
+            font-weight: 600;
+        }
+        .recommendation-value {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 36px;
+            color: #BF8F00;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h1>Executive Summary: Exceptional Execution, Extreme Valuation</h1>
+        </div>
+        <div class="content-area">
+            <div class="left-column">
+                <p>Palantir delivered <span class="highlight-text">56% revenue growth in FY2025</span>, reaching $4.48B, driven by explosive AIP adoption. The company achieved a Rule of 40 score of 127% — best-in-class among enterprise software peers.</p>
+                <p>However, at <span class="highlight-text">~70x EV/Revenue</span> and <span class="highlight-text">~246x P/E</span>, the stock is priced for absolute perfection. Our DCF analysis implies a fair value of $31.37 per share, representing ~80% downside from current levels.</p>
+                <p>We recommend <span class="highlight-text" style="color: #BF8F00;">HOLD</span> — outstanding business, but the valuation leaves no margin of safety.</p>
+            </div>
+            <div class="right-column">
+                <div class="data-box">
+                    <div class="data-label">FY2025 Revenue</div>
+                    <div class="data-value">$4.48B <span style="font-size: 20px; color: #20C997;">(+56%)</span></div>
+                </div>
+                <div class="data-box">
+                    <div class="data-label">Adj. Operating Margin</div>
+                    <div class="data-value">50.4%</div>
+                </div>
+                <div class="data-box">
+                    <div class="data-label">Free Cash Flow</div>
+                    <div class="data-value">$2.27B</div>
+                </div>
+                <div class="data-box">
+                    <div class="data-label">Cash Position</div>
+                    <div class="data-value">$7.2B</div>
+                </div>
+                <div class="recommendation-box">
+                    <div class="recommendation-label">DCF Implied Value</div>
+                    <div class="recommendation-value">$31.37</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

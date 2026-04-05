@@ -1,0 +1,156 @@
+{
+  "project_info": {
+    "title": "Palantir Technologies Inc. (NYSE: PLTR)",
+    "created": 1774737423.7477684,
+    "last_updated": 1774737843.4913352,
+    "total_slides": 12
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "exec_summary",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "business_model",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "revenue_acceleration",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "revenue_mix",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "profitability",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "rule_of_40",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "valuation_reality",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "dcf_valuation",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "sensitivity",
+      "state": "edited",
+      "pageNum": 10
+    },
+    {
+      "id": "bull_bear",
+      "state": "edited",
+      "pageNum": 11
+    },
+    {
+      "id": "recommendation",
+      "state": "edited",
+      "pageNum": 12
+    }
+  ],
+  "outline": [
+    {
+      "id": "cover",
+      "title": "Palantir Technologies Inc. (NYSE: PLTR)",
+      "summary": "Cover slide with recommendation, target price, and current price.",
+      "image_plan": "/home/ubuntu/pltr-equity-research/charts/cover_image.png - The slide explicitly requests a generated cover image with a dark navy tech/data theme, which Image 3 provides.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "exec_summary",
+      "title": "Executive Summary",
+      "summary": "Overview of exceptional execution but extreme valuation, leading to a HOLD recommendation.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "business_model",
+      "title": "Business Model",
+      "summary": "Overview of Palantir's four interconnected platforms forming an AI operating system.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "revenue_acceleration",
+      "title": "Revenue Acceleration",
+      "summary": "Highlighting the dramatic re-acceleration of revenue driven by the U.S. commercial segment.",
+      "image_plan": "/home/ubuntu/pltr-equity-research/charts/revenue_growth.png - The slide explicitly requests a chart showing revenue growth trajectory, which Image 1 provides.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "revenue_mix",
+      "title": "Revenue Segment Mix",
+      "summary": "Analysis of balanced growth across segments and the shift toward commercial revenue.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "profitability",
+      "title": "Profitability Inflection",
+      "summary": "Showcasing expanding margins across gross, operating, and free cash flow metrics.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "rule_of_40",
+      "title": "Rule of 40",
+      "summary": "Highlighting Palantir's best-in-class Rule of 40 score of 127%.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "valuation_reality",
+      "title": "Valuation Reality Check",
+      "summary": "Comparing Palantir's extreme EV/Revenue multiple against its software peers.",
+      "image_plan": "/home/ubuntu/pltr-equity-research/charts/valuation_comps.png - The slide explicitly requests a horizontal bar chart comparing EV/Revenue multiples across peers, which Image 2 provides.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "dcf_valuation",
+      "title": "DCF Valuation",
+      "summary": "Presenting the fundamental fair value of $31.37 per share based on DCF analysis.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "sensitivity",
+      "title": "Sensitivity Analysis",
+      "summary": "Demonstrating that all DCF scenarios show fundamental overvaluation.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "bull_bear",
+      "title": "Bull vs. Bear Case",
+      "summary": "Summarizing the key arguments for both the bull and bear cases.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "recommendation",
+      "title": "Recommendation",
+      "summary": "Final recommendation of HOLD with actionable advice for existing and new investors.",
+      "image_plan": "",
+      "slide_template_key": ""
+    }
+  ]
+}

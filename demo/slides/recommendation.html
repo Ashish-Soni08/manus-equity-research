@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            box-sizing: border-box; 
+            background: #121212;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Inter', sans-serif;
+            color: #CED4DA;
+            overflow: hidden;
+        }
+        .header {
+            padding: 60px 80px 0 80px; /* keep top padding per constraints */
+        }
+        .accent-line {
+            width: 60px;
+            height: 4px;
+            background: #20C997;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(32, 201, 151, 0.5);
+        }
+        h1 {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #F8F9FA;
+            line-height: 1.2;
+            text-shadow: 0 0 15px rgba(0, 229, 255, 0.1);
+        }
+        /* Reduced internal padding and gaps to fit within 720px */
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 80px 0 80px; /* reduced top padding */
+            gap: 20px; /* reduced gap */
+            flex: 1;
+        }
+        .recommendation-banner {
+            display: flex;
+            align-items: center;
+            background: rgba(191, 143, 0, 0.05);
+            border-left: 6px solid #BF8F00;
+            padding: 16px 30px; /* reduced vertical padding */
+            gap: 30px; /* slightly reduced horizontal gap */
+        }
+        .rec-title {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 64px;
+            font-weight: 600;
+            color: #BF8F00;
+            text-shadow: 0 0 20px rgba(191, 143, 0, 0.3);
+            letter-spacing: 4px;
+        }
+        .rec-text {
+            font-size: 22px;
+            line-height: 1.4; /* slightly tighter line-height to save vertical space */
+            color: #F8F9FA;
+            flex: 1;
+        }
+        .columns {
+            display: flex;
+            gap: 40px; /* reduced from 60 */
+        }
+        .column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px; /* reduced gap between section title and items */
+        }
+        .section-title {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 28px;
+            color: #00E5FF;
+            border-bottom: 1px solid rgba(0, 229, 255, 0.3);
+            padding-bottom: 6px; /* reduced */
+            margin-bottom: 6px; /* reduced */
+        }
+        .action-item {
+            display: flex;
+            flex-direction: column;
+            gap: 6px; /* reduced */
+        }
+        .action-label {
+            font-weight: 600;
+            color: #F8F9FA;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .action-label::before {
+            content: '■';
+            color: #20C997;
+            font-size: 14px;
+        }
+        .action-desc {
+            font-size: 18px;
+            color: #CED4DA;
+            line-height: 1.4; /* slightly tighter */
+            padding-left: 24px;
+            /* limit long descriptions to avoid extra height; keep content concise */
+        }
+        .highlight {
+            color: #20C997;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h1>Recommendation: Conviction on Business, Caution on Price</h1>
+        </div>
+        <div class="content-area">
+            <div class="recommendation-banner">
+                <div class="rec-title">HOLD</div>
+                <div class="rec-text">
+                    Palantir is executing at an elite level — the business fundamentals are exceptional. However, the stock price has run ahead of intrinsic value. Maintain positions while enforcing strict risk controls.
+                </div>
+            </div>
+            
+            <div class="columns">
+                <div class="column">
+                    <div class="section-title">Action Plan</div>
+                    <div class="action-item">
+                        <div class="action-label">Existing Holders</div>
+                        <div class="action-desc">Maintain positions to capture momentum, but implement a <span class="highlight">trailing stop-loss at $120</span> to protect gains.</div>
+                    </div>
+                    <div class="action-item">
+                        <div class="action-label">New Investors</div>
+                        <div class="action-desc">Do not initiate at current levels. Wait for a structural pullback to the <span class="highlight">$80-100 range</span> before building a position.</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="section-title">Key Catalysts to Monitor</div>
+                    <div class="action-item">
+                        <div class="action-label">Q1 2026 Earnings</div>
+                        <div class="action-desc">Must deliver execution against the 61% growth guidance to sustain the multiple.</div>
+                    </div>
+                    <div class="action-item">
+                        <div class="action-label">Insider Selling Pace</div>
+                        <div class="action-desc">Watch for any deceleration in insider sales; recent activity hit $292M in 30 days with zero purchases.</div>
+                    </div>
+                    <div class="action-item">
+                        <div class="action-label">Competitive Dynamics</div>
+                        <div class="action-desc">Monitor Databricks IPO timeline and Snowflake's AI product adoption.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
