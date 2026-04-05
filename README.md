@@ -6,6 +6,8 @@ Give it a ticker symbol. Get a complete investment memo.
 
 This project automates the end-to-end workflow of equity research analysis using [Manus](https://manus.im/) as the core platform. From a single ticker input (e.g., `PLTR`), it autonomously collects financial data, reads SEC filings, builds a valuation model, and produces three professional, editable deliverables — all in about **20 minutes**.
 
+[LinkedIn Post](https://www.linkedin.com/feed/update/urn:li:activity:7446672436189913088/) | [Video Demo](https://www.loom.com/share/e28e989c4a124817988d9a1dbee3dc4c)
+
 ---
 
 ## 📊 Demo: Palantir (PLTR) — What the Tool Produces
